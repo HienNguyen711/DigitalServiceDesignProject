@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Yes</title>
+     
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="DSD Project" name="description"/>
+        <meta content="Hien Nguyen" name="author"/>
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" />
+        
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+      
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      
+     
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+   
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+
+    
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <style>
+            #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#body {
+  display: none;
+  
+}
+        </style>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body onload="myFunction()">
+<div id="loader"></div>
+        <!--========== HEADER ==========-->
+        <div id="body">
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                   
+                    <div class="menu-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#">
+                                <img class="logo-img logo-img-main" src="img/logo.png" >
+                                <img class="logo-img logo-img-active" src="img/logo.png" >
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="/">Home</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/about">About</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/services">Services</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/ourteam">Ourteam</a></li>
+                           
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== SLIDER ==========-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title" id="bounce1" >Professional design</h1>
+                                <p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                            </div>
+                            <a href="#seemore" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h2 class="carousel-title" id="bounce2">UX-UI design</h2>
+                                <p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                            </div>
+                            <a href="#seemore" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">See more</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h2 class="carousel-title" id="bounce3">Multi-platform</h2>
+                                <p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                            </div>
+                            <a href="#seemore" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- Service -->
+        <div class="bg-color-sky-light" data-auto-height="true" id="seemore">
+            <div class="content-lg container">
+                <div class="row row-space-1 margin-b-2">
+                    <div class="col-sm-4 sm-margin-b-2">
+                       <!--wow slideInRight" data-wow-delay="2s"-->
+                        <div class="wow slideInRight" data-wow-duration=".3" data-wow-delay=".3s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-drawer"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3 >Art Of design</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-screen-tablet"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Responsive design</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-energy"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>High quality services</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row --><br><br><br><br><br><br>
+
+                <div class="row row-space-1">
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-notebook"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Highly recommended</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-speedometer"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Fast and lightweight</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-badge"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Professional choice</h3>
+                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Service -->
+<br><br>
+        <!-- Latest Products -->
+        <div class="content-lg container">
+            <div class="row margin-b-40">
+                <div class="col-sm-6">
+                    <h2 class="zoomInUp">Latest designs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+                </div>
+            </div>
+            <!--// end row -->
+
+            <div class="row">
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive zoom"  src="img/1920x1080/01.jpg" alt="Latest Products Image">
+                        </div>
+                    </div>
+                    <h4><a>Hybrid mobile apps</a> <span class="text-uppercase margin-l-20">design</span></h4>
+                    <p ng-hide="myCheck.$pristine">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    
+                    <a class="link" href="#" >Read More</a>
+                   
+                    
+                </div>
+                <!-- End Latest Products -->
+
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive zoom" src="img/1920x1080/01.jpg" alt="Latest Products Image" >
+                        </div>
+                    </div>
+                    <h4><a href="#">Graphic design</a> <span class="text-uppercase margin-l-20">conference</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a class="link" href="#">Read More</a>
+                </div>
+                <!-- End Latest Products -->
+
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive zoom" src="img/1920x1080/01.jpg" alt="Latest Products Image" >
+                        </div>
+                    </div>
+                    <h4><a href="#">Web design</a> <span class="text-uppercase margin-l-20">Design</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                    <a class="link" href="#">Read More</a>
+                </div>
+                <!-- End Latest Products -->
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- End Latest Products -->
+
+
+
+        <!-- Testimonials -->
+        <div class="content-lg container ">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2 wow slideInRight>Customer Reviews</h2>
+
+                    <!-- Swiper Testimonials -->
+                    <div class="swiper-slider swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
+                                    </div>
+                                    <div class="margin-b-20">
+                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">John Doe</span>, from Accenture</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                    <div class="margin-b-20">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Alex J.</span>, Customer</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- End Swiper Wrapper -->
+
+                        <!-- Pagination -->
+                        <div class="swiper-testimonials-pagination"></div>
+                    </div>
+                    <!-- End Swiper Testimonials -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- End Testimonials -->
+
+         <!-- Clients -->
+        <div class="bg-color-sky-light">
+            <div class="content-lg container">
+                <!-- Swiper Clients -->
+                <div class="swiper-slider swiper-clients">
+                    <!-- Swiper Wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/01.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/02.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/03.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/04.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/05.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/06.png" alt="Clients Logo">
+                        </div>
+                    </div>
+                    <!-- End Swiper Wrapper -->
+                </div>
+                <!-- End Swiper Clients -->
+            </div>
+        </div>
+        <!-- End Clients -->
+
+
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+            <div class="footer-seperator">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-50">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Services</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Ourteam</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
+                                
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                      
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo.png" alt="Asentus Logo">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="color-base fweight-700" href="#">YES</a> Developer: <a class="color-base fweight-700" href="#">Hien Nguyen</a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+</div>
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.js" type="text/javascript"></script>
+       
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.js" type="text/javascript"></script>
+        <script src="js/components/wow.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js" type="text/javascript"></script>
+   <script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
+</script>
+ <!--smoooth scroll-->
+ <script>
+ $('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+  </script>
+    </body>
+    <!-- END BODY -->
+</html>

@@ -1,0 +1,513 @@
+<html lang="en">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Yes</title>
+       
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="Hien Nguyen" name="author"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+       
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+   
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css">
+
+      
+        
+     
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        
+       
+      
+        <!-- THEME STYLES -->
+        
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+         <style>
+        
+       .parallax {
+    /* The image used */
+    background-image: url('img/1920x1080/01.jpg');
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+        </style>
+       <style>
+        /* CUSTOM STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+h4 {
+	font-size: 21px;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	background: #d2d2d2;
+	color: white;
+	font-weight: 700;
+	padding: 3px 0;
+}
+
+
+
+a {
+	font-size: 18px;
+	text-decoration: none;
+}
+
+
+.multi {
+	display: inline;
+	top: 0;
+	left: 3px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.programs,
+.courses {
+	margin: 8px 0 0 0;
+}
+
+.programs {
+	font-size: 0;
+	margin-bottom: 15px;
+}
+
+.programs button {
+	outline: none;
+	margin-bottom: 0;
+	background: whitesmoke;
+	width: 50%;
+	height: auto;
+	font-weight: normal;
+	border: 1px solid #ededed;
+	color: #000000;
+	font-size: 14px;
+	padding: 4px 0;
+	text-shadow: 0px 0px 0px #2f6627;
+}
+
+.programs button:hover {
+	background: #99cfe0;
+}
+
+.programs button.active {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
+	background: #3a9fbf;
+	color: white;
+}
+
+.courses {
+	margin-bottom: 15px;
+	font-size: 0;
+	background: whitesmoke;
+}
+
+.courses li {
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	width: 46%;
+	margin: 0 2%;
+}
+
+.courses a {
+	display: block;
+	height: 60px;
+	margin: 15px 0;
+	padding-top: 12.5px;
+	background: whitesmoke;
+	color: black;
+	border: 1px solid white;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+
+.courses a:hover {
+	background: #99cfe0;
+}
+
+.courses .mix-target {
+	display: none;
+}
+
+
+
+
+/* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (min-width: 750px) {
+
+	.container {
+		width: 95%;
+	}
+
+	.courses a {
+		background: #EBEBEB;
+		border: none;
+	}
+
+	.courses a:hover {
+		background: #EBEBEB;
+		-webkit-transform: scale(1.15);
+		    -ms-transform: scale(1.15);
+		        transform: scale(1.15);
+	}
+
+	h4 {
+		width: 50%;
+		margin-top: 12px;
+	}
+
+	img {
+		margin-bottom: 0;
+	}
+
+	.programs {
+		margin-bottom: 0;
+	}
+
+	.programs button {
+		width: 25%;
+		margin-bottom: 15px;
+	}
+
+	.courses li {
+		width: 21%;
+	}
+
+}
+        </style>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body>
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                   
+                    <div class="menu-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#">
+                                <img class="logo-img logo-img-main" src="img/logo.png" >
+                                <img class="logo-img logo-img-active" src="img/logo.png" >
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="/">Home</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/about">About</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/services">Services</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/ourteam">Ourteam</a></li>
+                           
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+    <div class="parallax"></div>  
+        
+<!-- Work -->
+<div class="bg-color-sky-light overflow-h">
+    <div class="content-lg container">
+        <div class="row margin-b-40">
+            <div class="col-sm-6">
+                <h2>Showcase</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+            </div>
+        </div>
+        <!--// end row -->
+
+        <!-- Masonry Grid -->
+        <div class="masonry-grid">
+            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
+                <!-- Work -->
+                <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive"  alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Art Of Coding</h3>
+                        <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+            <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                <!-- Work -->
+                <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive"  alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Clean Design</h3>
+                        <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+            <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                <!-- Work -->
+                <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive"  alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Clean Design</h3>
+                        <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+            <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                <!-- Work -->
+                <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
+                    <div class="work-overlay">
+                        <img class="full-width img-responsive"  alt="Portfolio Image">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="color-white margin-b-5">Clean Design</h3>
+                        <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                    </div>
+                    <a class="content-wrapper-link" href="#"></a>
+                </div>
+                <!-- End Work -->
+            </div>
+          
+        </div>
+        <!-- End Masonry Grid -->
+    </div>
+</div>
+<!-- End Work -->
+<!--mixitup-->
+<div class="wrap">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Design product demos</h4>
+      </div>
+    </div><!-- end of row -->
+
+    <div class="row">
+      <div class="twelve columns">
+        <div class="programs">
+          <button class="filter-btn" data-filter="all" >All</button>
+          <button class="filter-btn" data-filter=".undergraduate">Graphic designs</button>
+          <button class="filter-btn" data-filter=".graduate">Web designs</button>
+          <button class="filter-btn" data-filter=".phd">Mobile designs</button>
+        </div>
+      </div>
+    </div><!-- end of row -->
+
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Design demos</h4>
+      </div>
+    </div><!-- end of row -->
+
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="courses" id="mix-wrapper" >
+         
+          <li class="mix-target undergraduate" data-order="5" data-year="4"><a href="#"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target graduate" data-order="14" data-year="2"><a href="#"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target graduate" data-order="7" data-year="1"><a href="#"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target phd" data-order="4" data-year="3"><a href="#"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target undergraduate" data-order="16" data-year="3"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target undergraduate" data-order="6" data-year="4"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target phd" data-order="1" data-year="3"><img src="img/1920x1080/01.jpg" ></a></li>
+          <li class="mix-target undergraduate" data-order="12" data-year="4"><img src="img/1920x1080/01.jpg" ></a></li>
+    
+          
+        </ul>
+      </div>
+    </div><!-- end of row -->   
+  </div><!-- end of container -->
+</div><!-- end of wrap -->
+
+
+<!--mixitup-->
+       <br><br><br>
+        <!--========== FOOTER ==========-->
+  <footer class="footer">
+            <!-- Links -->
+            <div class="footer-seperator">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-50">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Services</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Ourteam</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
+                                
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                      
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo.png" alt="Asentus Logo">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="color-base fweight-700" href="#">YES</a> Developer: <a class="color-base fweight-700" href="#">Hien Nguyen</a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.js" type="text/javascript"></script>
+        <script src="js/components/wow.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/corner.js" type="text/javascript"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js" type="text/javascript">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.js" type="text/javascript"></script>
+        <script>
+            $('.img-responsive').corner('15px');
+            $('#mix-wrapper').mixItUp({
+  load: {
+  	sort: 'order:asc'
+  },
+	animation: {
+    effects: 'fade rotateZ(-180deg)',
+    duration: 700
+  },
+  selectors: {
+    target: '.mix-target',
+    filter: '.filter-btn',
+    sort: '.sort-btn'
+  },
+  callbacks: {
+    onMixEnd: function(state){
+      console.log(state)
+    }
+  }
+});
+           
+
+        </script>
+        
+        <script>
+(function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "home",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( ".img-responsive" ).attr( "src", item.media.m );
+        if ( i === 5 ) {
+          return false;
+        }
+      });
+    });
+})();
+</script>
+        
+    </body>
+    <!-- END BODY -->
+</html>
+
