@@ -1,0 +1,14 @@
+{
+	"name": "presentation",
+	"version": "1.0.0",
+	"description": "",
+	"dependencies": {
+		"http-server": "*"
+	},
+	"scripts": {
+		"start": "node ./node_modules/.bin/http-server"
+	},
+	"engines": {
+		"node": "4.2.1"
+	}
+}
