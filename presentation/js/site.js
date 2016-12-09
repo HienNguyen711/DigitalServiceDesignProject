@@ -1,21 +1,4 @@
-var slides = [
-	{
-		file: "ajax-aspnet.html",
-		name: "ASP.NET & AJAX",
-		description: "Presentation for Web Application Development lecture for final year student in LAMK. Required knowledge of C#, Javascript",
-		github_url: "https://github.com/nguymin4/aspnet-lecture",
-		screenshot: "img/screenshot/aspnet-ajax.png",
-		date: ""
-	},
-	{
-		file: "basic-javascript.html",
-		name: "Javascript - Basics",
-		description: "Learning session for LAMK fresh-year students - BIT15. No programming experience required",
-		github_url: "https://github.com/nguymin4/www-lecture",
-		screenshot: "img/screenshot/basic-javascript.png",
-		date: ""
-	}
-];
+
 
 function render(slide) {
 	var div = document.createElement("div");

@@ -8,7 +8,7 @@ body {
 
 .jumbotron {
 	background-color: transparent;
-	/*background: url("http://www.omgubuntu.co.uk/wp-content/uploads/2014/03/Forever-Shady-S.jpg") no-repeat bottom center;*/
+
 	background: url("../img/28.jpg") no-repeat top;
 	background-size: cover;
 	min-height: 450px;
