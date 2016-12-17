@@ -1,3 +1,4 @@
+//real time socket io
 (function() {
 	var multiplex = Reveal.getConfig().multiplex;
 	var socketId = multiplex.id;

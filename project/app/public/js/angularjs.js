@@ -1,4 +1,4 @@
-// create angular app
+// create angular module for validate form at the contact page
     var validationApp = angular.module('validationApp', []);
 
     // create angular controller
@@ -9,7 +9,7 @@
 
             // check to make sure the form is completely valid
             if ($scope.userForm.$valid) {
-                alert('Successful');
+                alert('Successful');//simple alert 
             }
 
         };

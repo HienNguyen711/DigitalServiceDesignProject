@@ -48,7 +48,7 @@
     </style>
     <script>
         $(function () {
-            $(document).tooltip();
+            $(document).tooltip();//crate tooltip in order when hover the form input, users will see the clear information about what they have to put infor
         });
     </script>
     <style>
@@ -162,7 +162,7 @@
     </div>
     <!-- End Contact List -->
     <!-- Contact -->
-
+<!--start form-->
     <div id="contact" class="content-section-a" ng-app="validationApp" ng-controller="mainController">
         <div class="container">
             <div class="row">
@@ -343,7 +343,7 @@
        <script>
                     
             
-$(function() {
+$(function() {//for date choose input field
     $('input[name="date"]').daterangepicker({
         singleDatePicker: true,
         showDropdowns: true

@@ -12,25 +12,13 @@
     <!-- GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-
     <!-- PAGE LEVEL PLUGIN STYLES -->
-
     <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
-
     <!-- THEME STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css">
-
-
-
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-
     <link rel="stylesheet" href="css/layout.css">
     <!-- THEME STYLES -->
-
-
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet" type="text/css" />
@@ -481,6 +469,7 @@
     </script>
 
     <script>
+        //ajax call by Jquery from Flickr API 
         (function () {
             var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
             $.getJSON(flickerAPI, {
@@ -491,7 +480,7 @@
                 .done(function (data) {
                     $.each(data.items, function (i, item) {
                         $(".img-responsive").attr("src", item.media.m);
-                        if (i === 5) {
+                        if (i === 5) {//just want to get 5 pics
                             return false;
                         }
                     });

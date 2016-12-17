@@ -1,15 +1,17 @@
+
 var express = require('express');
 var router = express.Router();
 
 router.get('/', function (req, res) {
-    res.render('index', {
+    res.render('index', {//main index page
         pageTitle: 'Home',
 
         pageID: 'home'
     });
 
 });
-router.get('/about', function (req, res) {
+//routing pages
+router.get('/about', function (req, res) {//about page
 
     res.render('about', {
         pageTitle: 'About',
@@ -19,7 +21,7 @@ router.get('/about', function (req, res) {
 });
 
 
-router.get('/services', function (req, res) {
+router.get('/services', function (req, res) {//services page
 
     res.render('services', {
         pageTitle: 'Services',
@@ -30,7 +32,7 @@ router.get('/services', function (req, res) {
 
 
 
-router.get('/ourteam', function (req, res) {
+router.get('/ourteam', function (req, res) {//our team pages
 
     res.render('ourteam', {
         pageTitle: 'Ourteam',
@@ -41,7 +43,7 @@ router.get('/ourteam', function (req, res) {
 
 
 
-router.get('/contact', function (req, res) {
+router.get('/contact', function (req, res) {//contact page
     res.render('contact', {
         pageTitle: 'Contact',
 

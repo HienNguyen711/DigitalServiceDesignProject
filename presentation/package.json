@@ -1,7 +1,8 @@
 {
 	"name": "presentation",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Digital service design",
+    "author":"Hien Nguyen",
 	"dependencies": {
 		"http-server": "*"
 	},
