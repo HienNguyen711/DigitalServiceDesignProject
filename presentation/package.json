@@ -2,7 +2,7 @@
 	"name": "presentation",
 	"version": "1.0.0",
 	"description": "Digital service design",
-    "author":"Hien Nguyen",
+    	"author":"Hien Nguyen",
 	"dependencies": {
 		"http-server": "*"
 	},
@@ -12,4 +12,5 @@
 	"engines": {
 		"node": "4.2.1"
 	}
+	
 }
